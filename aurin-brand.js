@@ -1,10 +1,9 @@
-/*
- * AURIN brand tokens — single source of truth for all Cloudflare error pages.
- * Values from the AURIN Brand Guidelines (colour palette + fonts).
- * Load AFTER the Tailwind CDN script:
- *   <script src="https://cdn.tailwindcss.com"></script>
- *   <script src="aurin-brand.js"></script>
- */
+// AURIN brand tokens — single source of truth for all Cloudflare error pages.
+// Values from the AURIN Brand Guidelines (colour palette + fonts).
+// Load this file with a script tag placed AFTER the Tailwind CDN script tag.
+// IMPORTANT: never put a literal closing script tag in this file (even in a
+// comment) — Cloudflare inlines this file into the page HTML, and the HTML
+// parser would end the script block there and dump the rest as page text.
 tailwind.config = {
   theme: {
     extend: {
